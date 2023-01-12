@@ -1,7 +1,14 @@
 import "./App.css";
+import Editor from "./components/Editor/Editor";
+import Previewer from "./components/Previewer/Previewer";
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <Editor />
+      <Previewer />
+    </>
+  );
 }
 
 export default App;
