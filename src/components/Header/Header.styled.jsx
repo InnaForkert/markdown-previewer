@@ -1,5 +1,6 @@
 import { SiFreecodecamp } from "react-icons/si";
 import { BsArrowsFullscreen } from "react-icons/bs";
+import { AiOutlineFullscreenExit } from "react-icons/ai";
 import styled from "styled-components";
 
 export const HeaderContainer = styled.div`
@@ -24,6 +25,10 @@ export const Title = styled.p`
 `;
 
 export const FullScreen = styled(BsArrowsFullscreen)`
+  margin-left: auto;
+  color: #233142;
+`;
+export const ExitFullScreen = styled(AiOutlineFullscreenExit)`
   margin-left: auto;
   color: #233142;
 `;

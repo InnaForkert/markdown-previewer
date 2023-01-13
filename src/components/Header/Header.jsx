@@ -1,11 +1,21 @@
-import { FullScreen, HeaderContainer, Icon, Title } from "./Header.styled";
+import {
+  ExitFullScreen,
+  FullScreen,
+  HeaderContainer,
+  Icon,
+  Title,
+} from "./Header.styled";
 
-function Header({ children }) {
+function Header({ children, setFS, onClick, currentFS }) {
   return (
     <HeaderContainer>
       <Icon size={28} />
       <Title>{children}</Title>
-      <FullScreen size={20} />
+      {currentFS ? (
+        <ExitFullScreen size={20} onClick={() => onClick(!currentFS)} />
+      ) : (
+        <FullScreen size={20} onClick={() => onClick(!currentFS)} />
+      )}
     </HeaderContainer>
   );
 }

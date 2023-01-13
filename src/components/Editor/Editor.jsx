@@ -1,10 +1,14 @@
+import { useState } from "react";
 import Header from "../Header/Header";
 import { Container, TextField } from "./Editor.styled";
 
 function Editor({ text, setText }) {
+  const [FS, setFS] = useState(false);
   return (
-    <Container>
-      <Header>Editor</Header>
+    <Container className={FS ? "FS" : ""}>
+      <Header currentFS={FS} onClick={setFS}>
+        Editor
+      </Header>
       <TextField
         resize="vertical"
         value={text}
