@@ -20,6 +20,7 @@ export const Icon = styled(SiFreecodecamp)`
 export const Title = styled.p`
   font-size: 24px;
   color: #233142;
+  margin: 0;
 `;
 
 export const FullScreen = styled(BsArrowsFullscreen)`
