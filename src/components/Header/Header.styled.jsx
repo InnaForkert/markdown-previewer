@@ -3,8 +3,6 @@ import { BsArrowsFullscreen } from "react-icons/bs";
 import styled from "styled-components";
 
 export const HeaderContainer = styled.div`
-  width: 80%;
-  margin: 0 auto;
   background-color: #f95959;
 
   display: flex;
